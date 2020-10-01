@@ -1,9 +1,15 @@
-
 def operate(operation, first, second):
     return operation(first, second)
 
 
 def add(first, second):
+    """
+    Add and return the sum of first and last.
+
+    :param: first
+    :param: second
+    :return: sum of first and second
+    """
     return first + second
 
 
@@ -24,4 +30,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
