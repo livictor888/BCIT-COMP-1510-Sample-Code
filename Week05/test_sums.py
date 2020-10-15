@@ -58,6 +58,7 @@ class Test(TestCase):
         expected = [4, 4, 6, 1, 1]
         sums.running_sum(argument)
         self.assertEqual(expected, argument,
-            "The list contains a mixture of negative values, zeros and"
+                         "The list contains a mixture of negative values, zeros and"
                          + "positive values.")
+
 
