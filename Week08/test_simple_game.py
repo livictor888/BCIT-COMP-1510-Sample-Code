@@ -7,10 +7,10 @@ from Week08.acquiring_input import simple_game
 
 class TestSimpleGame(TestCase):
 
+    @patch('builtins.input', side_effect=[1, 10, 5])
     @patch('random.randint', return_value=5)
     @patch('sys.stdout', new_callable=io.StringIO)
-    @patch('builtins.input', side_effect=[1, 10, 5])
-    def test_simple_game(self, mock_input, mock_output, random_number_generator):
+    def test_simple_game(self, mock_output, random_number_generator, mock_input):
         simple_game()
         the_game_printed_this = mock_output.getvalue()
         expected_output = "You're right!\n"
