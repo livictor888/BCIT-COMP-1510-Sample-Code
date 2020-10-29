@@ -2,7 +2,7 @@ import io
 from unittest import TestCase
 from unittest.mock import patch
 
-from Sandbox.Assorted.acquiring_input import simple_game
+from Week08.acquiring_input import simple_game
 
 
 class TestSimpleGame(TestCase):
@@ -15,3 +15,5 @@ class TestSimpleGame(TestCase):
         the_game_printed_this = mock_output.getvalue()
         expected_output = "You're right!\n"
         self.assertEqual(expected_output, the_game_printed_this)
+
+

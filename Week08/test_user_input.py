@@ -1,6 +1,8 @@
 from unittest import TestCase
 from unittest.mock import patch
 
+from Week08 import user_input
+
 """
 Demonstrate how to mock an object.
 
@@ -14,8 +16,6 @@ Instead we say, oh, no, use this "fake" input that I will
 patch into the test. And here is the sring you will
 pretend I just input.
 """
-
-import user_input
 
 
 class TestAskForValueAndConvertToLower(TestCase):
