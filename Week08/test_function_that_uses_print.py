@@ -6,7 +6,7 @@ from unittest import TestCase
 import unittest.mock
 import io
 
-import Week05.using_a_print_function as using_a_print_function
+import Week08.using_a_print_function as using_a_print_function
 
 
 class TestMyPrinter(TestCase):

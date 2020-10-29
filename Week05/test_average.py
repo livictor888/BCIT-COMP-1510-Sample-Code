@@ -1,6 +1,8 @@
 """
 Can you fix this?
 """
+
+
 def average(values):
     """Return the average of the numbers in values.  Some items in values are
     None, and they are not counted toward the average.
