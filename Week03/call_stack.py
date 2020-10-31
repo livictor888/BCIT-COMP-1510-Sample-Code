@@ -2,6 +2,7 @@
 What gets printed?
 """
 
+
 def a():
     print('a() starts')
     spam = 42

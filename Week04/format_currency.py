@@ -3,7 +3,7 @@ We can use the built-in format method to display a floating
 point number as a currency.
 
 What does the named parameter sep do? Try assigning different values
-to it.
+to it to find out.
 """
 
 

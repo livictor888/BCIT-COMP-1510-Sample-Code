@@ -4,6 +4,7 @@ disjointed equivalency partitions.
 """
 
 from unittest import TestCase
+
 import Week05.sums as sums
 
 

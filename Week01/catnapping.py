@@ -1,6 +1,6 @@
-print('''Dear Alice,
+print('''Dear Ms. Edwards,
 
-Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+Shangie's cat has been arrested for catnapping, cat burglary, and extortion.
 
 Sincerely,
 Bob''')
