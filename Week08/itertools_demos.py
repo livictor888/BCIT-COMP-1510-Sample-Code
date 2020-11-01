@@ -1,5 +1,5 @@
 """
-Demonstrate the use of some helpful Functions in the itertools module.
+Demonstrate the use of some helpful functions in the itertools module.
 """
 
 import itertools

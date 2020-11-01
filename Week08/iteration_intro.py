@@ -4,5 +4,5 @@ print(next(myit))
 print(next(myit))
 print(next(myit))
 
-
+print(type(myit))
 print(type(range(0, 1)))

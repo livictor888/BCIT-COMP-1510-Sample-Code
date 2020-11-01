@@ -13,7 +13,7 @@ We "mock" it! We create a "mock" object that we can
 we are unit testing calls builtins.input, we intervene so
 the unit test doesn't actually let our function call input.
 Instead we say, oh, no, use this "fake" input that I will 
-patch into the test. And here is the sring you will
+patch into the test. And here is the string you will
 pretend I just input.
 """
 

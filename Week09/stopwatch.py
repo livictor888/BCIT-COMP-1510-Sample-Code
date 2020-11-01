@@ -13,7 +13,9 @@ import time
 
 
 # Display the program's instructions.
-input('Press enter to begin. Afterwards, press ENTER to "click" the stopwatch. Press Ctrl-C to quit.')
+input('Press enter to begin. '
+      'Afterwards, press ENTER to "click" the stopwatch. '
+      'Press Ctrl-C to quit.')
 print('Started.')
 
 # get the first lap's start time
@@ -32,5 +34,4 @@ try:
         # reset the last lap time
         lastTime = time.time()
 except KeyboardInterrupt:
-    # Handle the Ctrl-C exception to keep its error message from displaying.
     print('Done.')
