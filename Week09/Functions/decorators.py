@@ -16,9 +16,7 @@ def do_twice(func):
 def decorate_and_return(func):
     def wrapper_returns(*args, **kwargs):
         print("Something is happening before the function is called.")
-        func(*args, **kwargs)
-        print("Something is happening after the function is called.")
-        return func(*args, **kwargs) # What is happening here?
+        return func(*args, **kwargs)
     return wrapper_returns
 
 
