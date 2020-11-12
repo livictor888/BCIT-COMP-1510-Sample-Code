@@ -54,3 +54,12 @@ def informative_convert(value):
         print("Conversion error: {} returning -1".format(str(e)), file=sys.stderr)
         return -1
 
+
+def our_factorial(positive_integer):
+    if positive_integer < 0:
+        raise ValueError("No negative numbers!")
+    if isinstance(positive_integer, int):
+        raise TypeError("That's not an integer")
+
+
+
