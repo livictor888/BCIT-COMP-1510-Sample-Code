@@ -52,7 +52,7 @@ def informative_convert(value):
         return int(value)
     except (ValueError, TypeError) as e:
         print("Conversion error: {} returning -1".format(str(e)), file=sys.stderr)
-        return -1
+        return None
 
 
 def our_factorial(positive_integer):
