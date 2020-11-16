@@ -9,7 +9,7 @@ def do_something():
     if user_input:  # Or if the value meets some test
         do_something_else()
     else:
-        return
+        return None
 
 
 def do_something_else():
@@ -27,3 +27,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Call stack
+
+# do_something()
+# menu
+# main

@@ -25,3 +25,33 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Represents the call stack
+# menu
+# do_something_else()
+# do_something_else()
+# do_something_else()
+# do_something_else()
+# do_something_else()
+# do_something
+# do_something
+# do_something
+# do_something
+# do_something
+# do_something
+# do_something
+# menu
+# do_something_else()
+# do_something_else()
+# do_something_else()
+# do_something_else()
+# do_something_else()
+# do_something
+# do_something
+# do_something
+# do_something
+# do_something
+# do_something
+# do_something
+# menu
+# main
