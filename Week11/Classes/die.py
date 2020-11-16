@@ -36,36 +36,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# Here's the same thing in module and function form
-
-# import random
-#
-# face_value = 1
-# number_of_sides = 1
-#
-# """A module.  This module represents a die."""
-# def get_face_value():
-#     return face_value
-#
-#
-# def set_face_value(new_value):
-#     global face_value
-#     if 0 < new_value <= number_of_sides:
-#         face_value = new_value
-#
-#
-# def get_number_of_sides():
-#     return number_of_sides
-#
-#
-# def set_number_of_sides(new_size):
-#     global number_of_sides
-#     if new_size > 0:
-#         number_of_sides = new_size
-#
-#
-# def roll_die():
-#     global face_value
-#     face_value = random.randint(1, number_of_sides)
-#     return get_face_value()
