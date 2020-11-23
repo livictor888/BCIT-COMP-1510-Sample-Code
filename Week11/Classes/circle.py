@@ -4,7 +4,7 @@ import math
 class Circle:
 
     """
-    Create a Circle object
+    Create a Circle object.
     """
     def __init__(self, x: int, y: int, radius: int):
         self.__x = x
@@ -15,37 +15,37 @@ class Circle:
             raise ValueError("You cannot give a radius below zero")
 
     """
-    Get X Value
+    Get X Value.
     """
     def get_x(self):
         return self.__x
 
     """
-    Get Y Value
+    Get Y Value.
     """
     def get_y(self):
         return self.__y
 
     """
-    Get Radius
+    Get Radius.
     """
     def get_radius(self):
         return self.__radius
 
     """
-    Set X Coordinates
+    Set X Coordinate.
     """
     def set_x(self, x_input: int):
         self.__x = x_input
 
     """
-    Set Y Coordinates
+    Set Y Coordinate.
     """
     def set_y(self, y_input: int):
         self.__y = y_input
 
     """
-    Set Radius
+    Set Radius.
     """
     def set_radius(self, radius_input: int):
         if radius_input > 0:

@@ -10,16 +10,16 @@ class Car:
         self.model = model
         self.year = year
         self.odometer_reading = 0
-        
+
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name."""
         long_name = str(self.year) + ' ' + self.manufacturer + ' ' + self.model
         return long_name.title()
-    
+
     def read_odometer(self):
         """Print a statement showing the car's mileage."""
         print("This car has " + str(self.odometer_reading) + " miles on it.")
-        
+
     def update_odometer(self, mileage):
         """
         Set the odometer reading to the given value.
@@ -29,7 +29,7 @@ class Car:
             self.odometer_reading = mileage
         else:
             print("You can't roll back an odometer!")
-    
+
     def increment_odometer(self, miles):
         """Add the given amount to the odometer reading."""
         if miles >= 0:
@@ -39,6 +39,9 @@ class Car:
 def main():
     hot_rod = Car("Mazda", "MX5", 2008)
     print(hot_rod)
+    hot_rod.year = 2050
+    hot_rod.year = False
+    hot_rod.odometer_reading = -3000
 
 
 if __name__ == "__main__":

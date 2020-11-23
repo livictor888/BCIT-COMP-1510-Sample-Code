@@ -42,6 +42,7 @@ def main():
     three.print_info()
 
     print(three.counter)
+    print(Cat.counter)
     # print(one.counter)
 
 

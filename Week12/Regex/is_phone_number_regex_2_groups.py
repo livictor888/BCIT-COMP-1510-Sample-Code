@@ -11,7 +11,7 @@ def main():
         print('The phone number you entered is:', match_object.groups())
         print('The area code you entered is:', match_object.group(1))
         print('The exchange you entered is:', match_object.group(2))
-        print('The subscriber number you entered is:', match_object.group(3))
+        print('The subscriber number you entered is:', match_object.group(-1))
     else:
         print("That's not a phone number.")
 

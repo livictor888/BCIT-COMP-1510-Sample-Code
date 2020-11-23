@@ -3,7 +3,7 @@ import re
 
 def main():
     # name_regex = re.compile(r'First Name: (.+) Last Name: (.+)')
-    # user_input = 'First Name: A Last Name: B'
+    # user_input = 'First Name: a-2 Last Name: '
     #
     # match_object = name_regex.search(user_input)
     # if match_object:
