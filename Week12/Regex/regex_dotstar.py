@@ -11,7 +11,7 @@ def main():
     # else:
     #     print("Wrong input")
 
-    non_greedy_regex = re.compile(r'<.*?>')
+    non_greedy_regex = re.compile(r'<.*>?')
     match_object = non_greedy_regex.search('<Inner > Outer>')
     print(match_object.group())
 
