@@ -15,7 +15,7 @@ def get_stored_username():
 
 def get_new_username():
     """Prompt for and store a new username."""
-    username = input("What is your name? ")
+    username = {"name": input("What is your name? ")}
     filename = 'username.json'
     with open(filename, 'w') as f_obj:
         json.dump(username, f_obj)
@@ -26,10 +26,10 @@ def greet_user():
     """Greet the user by name."""
     username = get_stored_username()
     if username:
-        print("Welcome back, " + username + "!")
+        print("Welcome back, " + username['name'] + "!")
     else:
         username = get_new_username()
-        print("We'll remember you when you come back, " + username + "!")
+        print("We'll remember you when you come back, " + username['name'] + "!")
 
 
 def main():
