@@ -21,7 +21,7 @@ import time
 
 startTime = time.time()
 print(startTime)
-
+product = 1
 for i in range(1, 100000):
     product = product * i
 

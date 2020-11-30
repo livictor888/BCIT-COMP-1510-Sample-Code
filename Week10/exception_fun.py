@@ -1,6 +1,6 @@
 """A module for demonstrating exceptions.
 
-Use common or existing exceptions when possible, i.e.:
+Use common or existing exceptions when possible, _.e.:
 
 IndexError
 KeyError
