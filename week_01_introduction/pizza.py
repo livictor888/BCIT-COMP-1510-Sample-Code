@@ -1,5 +1,5 @@
 name = "Evan"
 breakfast = "pizza"
-
-print(name, "ate", breakfast)
+time = "8:30"
+print(name, "ate", breakfast, "at", time)
 
