@@ -13,5 +13,6 @@ def is_dinosaur(name):
 
 if __name__ == '__main__':
     """
-    Drives the program. Scroll up to see all the output when this finishes."""
+    Drives the program. Scroll up to see all the output when this finishes.
+    """
     help(__name__)
