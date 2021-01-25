@@ -6,7 +6,7 @@ Also demonstrates how to mock an object.
 from unittest import TestCase
 from unittest.mock import patch
 
-import week_04_errors_and_testing.roll_die as roll_die
+import week_04_data_structures_and_errors_and_testing.roll_die as roll_die
 
 
 class TestRollDie(TestCase):
@@ -44,7 +44,7 @@ class TestRollDie(TestCase):
         numbers we will "pretend" that randint produces when roll_die uses it.
         Pretty cool, don't you think? You are mocking the random generator so you
         can create a deterministic test, a test where the randomness has been harnessed
-        in order to ensure the logic in your function is correct!"""
+        in order to ensure the logic in your function, not randint, is correct!"""
         actual = roll_die.roll_die(3, 3)
         self.assertEqual(actual, 5)
 

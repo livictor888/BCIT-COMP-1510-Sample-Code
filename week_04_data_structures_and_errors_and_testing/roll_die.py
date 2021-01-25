@@ -1,5 +1,5 @@
 """
-Demonstrate how to mock an object.
+Demonstrate how to use a random number generator.
 """
 
 import random

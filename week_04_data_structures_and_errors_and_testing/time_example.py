@@ -1,7 +1,8 @@
 """
 Python is fabulous but Python is slow. Very slow. Python is not
 fast by any measurements. If you ever need to measure how long
-something takes, here's a fun way to do it!
+something takes, here's a fun way to do it! File this away, we
+will use it...
 """
 
 import time

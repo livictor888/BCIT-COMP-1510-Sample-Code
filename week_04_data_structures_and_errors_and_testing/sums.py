@@ -1,5 +1,12 @@
 """
-Demonstrate unit testing.
+When we pass a list to a function, remember we are actually passing the
+reference to the list aka its address in memory.
+
+Once we pass an address to a list, the function is allowed to
+modify the contents of the list. It cannot change the address (reference)
+of the list, but it can change the contents.
+
+That's what we are doing here!
 """
 
 

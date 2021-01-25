@@ -5,7 +5,7 @@ disjointed equivalency partitions.
 
 from unittest import TestCase
 
-import week_04_errors_and_testing.sums as sums
+import week_04_data_structures_and_errors_and_testing.sums as sums
 
 
 class Test(TestCase):
