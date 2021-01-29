@@ -32,9 +32,9 @@ def prepend(first, second):
 def main():
     a = int(input())
     b = int(input())
-    c = prepend
+    c = add
     print(operate(c, a, b))
-    print(operate(prepend, a, b))
+    print(operate(add, a, b))
 
 
 if __name__ == "__main__":
