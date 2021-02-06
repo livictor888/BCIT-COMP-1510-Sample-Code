@@ -11,8 +11,14 @@ We WANT to see ALL the output.
 
 import doctest
 
-def square(x):
+
+def square(value):
     """Return the square of x.
+
+    :param value: a number
+    :precondition: value is a number
+    :postcondition: the mathematical square of value is calculated
+    :return: value squared
 
     >>> square(2)
     4
@@ -25,7 +31,7 @@ def square(x):
     >>> square(-0.5)
     0.25
     """
-    return x * x
+    return value * value
 
 
 def main():
