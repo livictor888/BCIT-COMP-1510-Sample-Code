@@ -10,6 +10,6 @@ def is_longer(first_list, second_list):
     True
     >>> is_longer(['abcdef'], ['ab', 'cd', 'ef'])
     False
-    >>> is_longer(['a', 'b', 'c'], [1, 2, 3]
+    >>> is_longer(['a', 'b', 'c'], [1, 2, 3])
     False
     """
