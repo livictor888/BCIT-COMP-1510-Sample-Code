@@ -12,7 +12,7 @@ of a larger program. If (and only if) we were allowed to use
 global variables...
 """
 
-character = { "name": None, "age": 0 , "HP": 10, "X": 0, "Y":0}
+character = {"name": None, "age": 0, "HP": 10, "X": 0, "Y": 0}
 
 
 def get_age():

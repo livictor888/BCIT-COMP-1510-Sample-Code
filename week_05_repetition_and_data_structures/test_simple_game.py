@@ -14,11 +14,11 @@ grey instead of white, like mock_output, the io.StringIO object, which is called
 in the test function's code.
 """
 
-from week_09_exceptions_and_io import io
+import io
 from unittest import TestCase
 from unittest.mock import patch
 
-from week_08_function_and_decorators.acquiring_input import simple_game
+from week_05_repetition_and_data_structures.simple_game import simple_game
 
 
 class TestSimpleGame(TestCase):
