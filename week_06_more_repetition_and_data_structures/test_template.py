@@ -11,5 +11,5 @@ class Test(TestCase):
     written any code yet. So start with a test that fails, and then strive to implement a test
     that our tested code can pass.
     """
-    def test_simple_game(self):
+    def test_function(self):
         self.fail()

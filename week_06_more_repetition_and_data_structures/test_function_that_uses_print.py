@@ -27,9 +27,9 @@ object.
 
 from unittest import TestCase
 import unittest.mock
-from week_09_exceptions_and_io import io
+import io
 
-import week_08_function_and_decorators.using_a_print_function as using_a_print_function
+import week_06_more_repetition_and_data_structures.using_a_print_function as using_a_print_function
 
 
 class TestMyPrinter(TestCase):
