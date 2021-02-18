@@ -18,7 +18,7 @@ import io
 from unittest import TestCase
 from unittest.mock import patch
 
-from week_05_repetition_and_data_structures.simple_game import simple_game
+from week_06_more_repetition_and_data_structures.simple_game import simple_game
 
 
 class TestSimpleGame(TestCase):
