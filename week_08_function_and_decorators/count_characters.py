@@ -8,7 +8,7 @@ def main():
     counts = {}
 
     word = input("Enter a word, or -1 to quit: ")
-    while word.trim() != "-1":
+    while word.strip() != "-1":
         for char in word:
             if char in counts:
                 counts[char] = counts[char] + 1

@@ -5,7 +5,7 @@ When we invoke a program like this:
     python program_name
 
 We can include command line arguments like this:
-    python program_name -1 0 1 Hello 3.14 True Difficult 1-player
+    python3 program_name -1 0 1 Hello 3.14 True Difficult 1-player
 """
 
 import sys
