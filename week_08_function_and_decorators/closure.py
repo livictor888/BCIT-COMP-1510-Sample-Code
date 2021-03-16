@@ -18,14 +18,16 @@ def generate_power(number):
     return nth_power
 
 
+def tenth_power(power):
+    return 10 ** power
+
+
 def main():
-    magnitudes = generate_power(10)
+    tenth_power = generate_power(10)
 
-    print(magnitudes(1))
-
-    print(magnitudes(3))
-
-    print(magnitudes(6))
+    print(tenth_power(1))
+    print(tenth_power(3))
+    print(tenth_power(6))
 
     powers_of_four = generate_power(4)
 

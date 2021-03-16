@@ -1,25 +1,37 @@
+"""
+A simple "stopwatch". This stopwatch uses an exception. The
+keyboard interrupt is an exceptional situation. If the program
+detects a keyboard interrupt, an exception object is created.
+
+Ordinarily an exception object must be dealt with, else the
+program will crash. That's what we have done here. All we did
+was allow the program to exit gracefully. Sometimes that's all
+we need to do.
+"""
 
 import time
 
+
 # Display the program's instructions.
-print('Press enter to begin. Afterwards, press ENTER to "click" the stopwatch. Press Ctrl-C to quit.')
-input() # press Enter to begin
+input('Press enter to begin. '
+      'Afterwards, press ENTER to "click" the stopwatch. '
+      'Press Ctrl-C to quit.')
 print('Started.')
-startTime = time.time() # get the first lap's start time
+
+# get the first lap's start time
+startTime = time.time()
 lastTime = startTime
 lapNum = 1
 
 # Start tracking the lap times.
 try:
     while True:
-        input()
+        input('Press ENTER to "click" the stopwatch')
         lapTime = round(time.time() - lastTime, 2)
         totalTime = round(time.time() - startTime, 2)
         print('Lap #%s: %s (%s)' % (lapNum, totalTime, lapTime), end='')
         lapNum += 1
-        lastTime = time.time() # reset the last lap time
+        # reset the last lap time
+        lastTime = time.time()
 except KeyboardInterrupt:
-    # Handle the Ctrl-C exception to keep its error message from displaying.
-    # If this doesn't work in your IDE, you can edit your configuration to
-    # "Emulate terminal in output console".
-    print('\nDone.')
+    print('Done.')

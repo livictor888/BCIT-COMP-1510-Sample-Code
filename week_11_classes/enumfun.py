@@ -8,6 +8,10 @@ class UserStatus(Enum):
 
     In this case, we are defining the class User_Status to be an enumeration
     that contains four possible states.
+
+    Putting Enum inside parentheses in the class declaration means that
+    UserStatus is a kind of Enum. A subtype. A subclass. A child class.
+    A specialized version. A customized version. Etc., etc., ...
     """
     PENDING = auto()
     INACTIVE = auto()

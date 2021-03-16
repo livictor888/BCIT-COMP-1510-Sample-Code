@@ -8,12 +8,13 @@ class Point:
         """Initialize the position of a new point. The x and y
            coordinates can be specified. If they are not, the
            point defaults to the origin (0,0)."""
-        self.move(x, y)
+        self.y = y
+        self.x = x
 
     def move(self, x, y):
         """Move the point to a new location in 2D space."""
-        self.x = x
         self.y = y
+        self.x = x
 
     def reset(self):
         """Reset the point back to the geometric origin: 0, 0"""
