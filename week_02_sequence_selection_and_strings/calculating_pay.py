@@ -26,4 +26,3 @@ else:
 
 # Display the gross pay.
 print('The gross pay is $', format(gross_pay, ',.2f'), sep='')
-

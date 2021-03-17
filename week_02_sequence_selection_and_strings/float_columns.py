@@ -1,7 +1,6 @@
 """
 We can use the built-in format method to display a floating
 point number in a field of 7 spaces with 2 decimal places.
-
 """
 
 

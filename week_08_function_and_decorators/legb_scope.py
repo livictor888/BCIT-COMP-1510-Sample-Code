@@ -1,5 +1,9 @@
 """
-When we talk about scope, we talk about LEGB: Local, Enclosing, Global, then Built-in scopes.
+When we talk about scope, we talk about LEGB:
+ 1. Local
+ 2. Enclosing
+ 3. Global
+ 4. then Built-in scopes.
 
 What does this code do?
 """

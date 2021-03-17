@@ -7,6 +7,7 @@ to it to find out.
 """
 
 
-monthly_pay = 5000.0 # Is that enough to pay a mortgage in Vancouver?
+monthly_pay = 5000.0  # Is that enough to pay a mortgage in Vancouver?
 annual_pay = monthly_pay * 12
+print('Your annual pay is $', annual_pay)
 print('Your annual pay is $', format(annual_pay, ',.2f'), sep='')

@@ -3,7 +3,7 @@ Hey!  Check out this docstring!  So helpful!
 """
 
 from typing import TextIO
-from week_09_exceptions_and_io.io import StringIO
+from io import StringIO
 
 
 def sum_number_pairs(input_file: TextIO, output_file: TextIO) -> None:
@@ -30,6 +30,7 @@ def sum_number_pairs(input_file: TextIO, output_file: TextIO) -> None:
 
         # Writes the output
         output_file.write(new_line)
+
 
 def main():
     # Open two files at once

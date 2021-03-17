@@ -1,6 +1,7 @@
 """
 This is something new.  TextIO! and typing!
 """
+
 from typing import TextIO
 
 

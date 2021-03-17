@@ -12,22 +12,20 @@ def generate_power(number):
 
     # Define the inner function ...
     def nth_power(power):
+        # That closes upon a variable and makes it a constant part of
+        # of the new function (the base of the exponent)
         return number ** power
 
     # ... that is returned by the factory function.
     return nth_power
 
 
-def tenth_power(power):
-    return 10 ** power
-
-
 def main():
-    tenth_power = generate_power(10)
+    powers_of_ten = generate_power(10)
 
-    print(tenth_power(1))
-    print(tenth_power(3))
-    print(tenth_power(6))
+    print(powers_of_ten(1))
+    print(powers_of_ten(3))
+    print(powers_of_ten(6))
 
     powers_of_four = generate_power(4)
 

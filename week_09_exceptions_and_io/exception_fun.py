@@ -1,6 +1,7 @@
-"""A module for demonstrating exceptions.
+"""
+A module for demonstrating exceptions.
 
-Use common or existing exceptions when possible, _.e.:
+Use common or existing exceptions when possible, i.e.:
 
 IndexError
 KeyError
@@ -20,7 +21,7 @@ import sys
 
 
 def convert(value):
-    """Convert to an integer.  Okay. This is fine. Document the behaviour in the docstring."""
+    """Convert to an integer.  Okay. This is just okay. Document the behaviour in the docstring."""
     try:
         the_int = int(value)
     except ValueError:
@@ -29,7 +30,7 @@ def convert(value):
 
 
 def another_convert(value):
-    """Convert to an integer.  Better. Safer. Note the use of pass. We want to get rid of this."""
+    """Convert to an integer. Safer. But. Note the use of pass. We want to get rid of this."""
     the_int = -1
     try:
         the_int = int(value)
@@ -60,6 +61,3 @@ def our_factorial(positive_integer):
         raise ValueError("No negative numbers!")
     if isinstance(positive_integer, int):
         raise TypeError("That's not an integer")
-
-
-

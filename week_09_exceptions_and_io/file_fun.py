@@ -1,4 +1,4 @@
-from week_09_exceptions_and_io import io
+import io
 
 
 def make_file():

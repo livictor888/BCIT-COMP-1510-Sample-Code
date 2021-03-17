@@ -1,3 +1,13 @@
+"""
+Function annotations can be ignored. Look at this example. We
+have annotated the add function so that it 'only' accepts
+ints. But we have successfully used it with floats and with
+strings. Run this -- no runtime errors, no crashes. But we
+do get some warnings that are very hard to ignore. Mouse
+over the two floats and the two strings for more information.
+"""
+
+
 def add(a: int = 5, b: int = 4) -> int:
     return a + b
 

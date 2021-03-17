@@ -24,14 +24,14 @@ def print_using_range(any_old_list):
     pass
 
 
-def print_using_while(w_list):
+def print_using_while(word_list):
     """
     Iterate over the list, and print it out one item per line, using a while loop and a list index.
     """
     pass
 
 
-def print_in_reverse(w_list):
+def print_in_reverse(word_list):
     """
     Iterate over the list, and print it out one item per line in reverse order, using a while loop
     and a list index.
@@ -39,39 +39,46 @@ def print_in_reverse(w_list):
     pass
 
 
-def long_word(w_list):
+def long_word(word_list):
     """
     Iterate over the list, return the length of the longest word in the list, using a for item
     in loop
     """
     pass
 
-# 7. iterate over the list, return the minimum word length in the list,
-#    using a while loop and a list index
-#
-def short_word(w_list):
+
+def short_word(word_list):
+    """
+    Iterate over the list, return the minimum word length in the list,
+    using a while loop and a list index
+    """
     return 0
 
-# 8. iterate over the list, return the average word length,
-#    using a for loop with a range
-#
-def avg_word_length(w_list):
+
+def avg_word_length(word_list):
+    """
+    Iterate over the list, return the average word length,
+    using a for loop with a range.
+    """
     return 0
 
-# 9. iterate over the list, create and return a new list that only contains
-#    the unique words from the original list
-#
-def unique_words(w_list):
+
+def unique_words(word_list):
+    """
+    Iterate over the list, create and return a new list that only contains
+    the unique words from the original list
+    """
     return []
 
-# 10. iterate over the list, create and return a dictionary that has a count of
-#     the number of times each word occurs in the list
-def word_counts(w_list):
+
+def word_counts(word_list):
+    """
+    Iterate over the list, create and return a dictionary that has a count of
+    the number of times each word occurs in the list
+    """
     return {}
 
-# This is the main routine, which just tests that out Functions work. The tests
-# are all written.
-#
+
 def tests():
 
     a_list = get_user_input()
@@ -104,4 +111,11 @@ def tests():
     wc = word_counts(a_list)
     print("\nTest 10: word_counts =", wc)
 
-tests()
+
+def main():
+    tests()
+
+
+if __name__ == "__main__":
+    main()
+
