@@ -13,14 +13,15 @@ def read_file():
         contents = file_object.read()
         print(contents)
         file_object.seek(io.SEEK_SET)  # return to beginning
-        file_object.seek(54)  # move forward 4 characters
-        awesome = file_object.read(18)  # read 8 characters
+        file_object.seek(54)  # move forward 54 characters
+        awesome = file_object.read(18)  # read 18 characters
         print(awesome)
-        remember = file_object.seek(0, io.SEEK_CUR)  # memorize location
+        remember = file_object.tell()  # memorize location
+        print(remember)
         file_object.seek(io.SEEK_SET)  # return to beginning
         contents = file_object.read()
         print(contents)
-        file_object.seek(remember + 4)  # move to the end of the name
+        file_object.seek(remember + 4)
         author = file_object.read()
         print(author)
 

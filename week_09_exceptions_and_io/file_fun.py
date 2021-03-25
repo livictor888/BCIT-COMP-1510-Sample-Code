@@ -10,6 +10,7 @@ def make_file():
 def read_file():
     with open('newfile.txt') as file_object:
         contents = file_object.read()
+        print(type(contents))
         print(contents)
         file_object.seek(io.SEEK_SET)
         more_contents = file_object.read()

@@ -20,6 +20,7 @@ function call stack when we execute this code?
 Compare this to bad_program.py
 """
 
+
 def menu():
     while True:
         # does stuff
