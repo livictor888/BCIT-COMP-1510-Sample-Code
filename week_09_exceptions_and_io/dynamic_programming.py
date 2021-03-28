@@ -12,23 +12,22 @@ def timer(func):
         value = func(*args, **kwargs)
         end_time = time.perf_counter()
         run_time = end_time - start_time
-        print(f"Finished {func.__name__!r} in {run_time:.4f} secs")
+        print(f"Finished {func.__name__!r} in {run_time:.30f} secs")
         return value
     return wrapper_timer
 
 
 def fibonacci_dynamic(nth_term, memory_structure):
-    if nth_term == 0:
-        memory_structure[nth_term] = 0
-        return memory_structure[nth_term]
-    elif nth_term == 1:
-        memory_structure[nth_term] = 1
-        return memory_structure[nth_term]
     try:
         return memory_structure[nth_term]
     except KeyError:
-        result = fibonacci_dynamic(nth_term - 1, memory_structure) + \
-                 fibonacci_dynamic(nth_term - 2, memory_structure)
+        if nth_term == 0:
+            memory_structure[nth_term] = 0
+            return memory_structure[nth_term]
+        elif nth_term == 1:
+            memory_structure[nth_term] = 1
+            return memory_structure[nth_term]
+        result = fibonacci_dynamic(nth_term - 1, memory_structure) + fibonacci_dynamic(nth_term - 2, memory_structure)
         memory_structure[nth_term] = result
         return memory_structure[nth_term]
 
