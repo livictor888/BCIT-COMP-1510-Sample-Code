@@ -24,6 +24,7 @@ def main():
 
     if current_user_status == UserStatus.ACTIVE:
         current_user_status = UserStatus.INACTIVE
+    print(current_user_status)
 
 
 if __name__ == "__main__":

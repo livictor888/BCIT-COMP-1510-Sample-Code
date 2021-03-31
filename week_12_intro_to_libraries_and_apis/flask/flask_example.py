@@ -3,7 +3,7 @@ from flask import Flask, escape, request
 """
 To use this:
 
-1. ensure you have installed flask using pip3 or PyCharm
+1. Ensure you have installed flask using pip3 or PyCharm
 2. Open a terminal window in the same folder as this file
 3. Enter the command export FLASK_APP=flask_example.py
 4. Enter the command flask run
@@ -14,6 +14,7 @@ To use this:
 """
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def hello():
