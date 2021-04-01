@@ -5,8 +5,8 @@ def get_stored_username():
     """Get stored username if available."""
     filename = 'username.json'
     try:
-        with open(filename) as f_obj:
-            username = json.load(f_obj)
+        with open(filename) as file_object:
+            username = json.load(file_object)
     except FileNotFoundError:
         return None
     else:
@@ -17,8 +17,8 @@ def get_new_username():
     """Prompt for and store a new username."""
     username = {"name": input("What is your name? ")}
     filename = 'username.json'
-    with open(filename, 'w') as f_obj:
-        json.dump(username, f_obj)
+    with open(filename, 'w') as file_object:
+        json.dump(username, file_object)
     return username
 
 

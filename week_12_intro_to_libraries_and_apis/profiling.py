@@ -14,6 +14,13 @@ we want fast software, we can use something else. Python
 is easy to use and develop and grow and it RULES the
 artificial intelligence big data machine learning world
 (for now, anyway!)
+
+Better choices:
+
+time.perf_counter and time.perf_counter_ns which
+are performance counters. The latter returns the total
+number of nanoseconds!
+
 """
 
 import time
@@ -32,6 +39,3 @@ print('Took %f seconds to calculate.' % (endTime - startTime))
 
 # Consider how long it takes to perform this command!
 print('The result is %s digits long.' % (len(str(product))))
-
-
-

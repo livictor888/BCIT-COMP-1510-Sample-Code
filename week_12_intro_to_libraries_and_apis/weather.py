@@ -8,17 +8,10 @@ import json
 
 def get_forecast(url: str) -> None:
     response = requests.get(url)
-    response.raise_for_status()
     vancouver_weather = json.loads(response.text)
-    w = vancouver_weather['list']
+    local_weather = vancouver_weather['list']
     print('Current weather in Vancouver:')
-    print(w[0]['weather'][0]['main'], '-', w[0]['weather'][0]['description'])
-    print()
-    print('Tomorrow:')
-    print(w[1]['weather'][0]['main'], '-', w[1]['weather'][0]['description'])
-    print()
-    print('Day after tomorrow:')
-    print(w[2]['weather'][0]['main'], '-', w[2]['weather'][0]['description'])
+    print(local_weather[0]['weather'][0]['main'], '-', local_weather[0]['weather'][0]['description'])
 
 
 def main():

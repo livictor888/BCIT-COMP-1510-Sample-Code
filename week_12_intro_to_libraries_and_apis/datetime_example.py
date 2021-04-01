@@ -9,16 +9,16 @@ now = datetime.datetime.now()
 print(type(now))
 print(now)
 
-presents = datetime.datetime(2020, 12, 25, 9, 0, 0)
+presents = datetime.datetime(2021, 12, 25, 9, 0, 0)
 print(presents.year, presents.month, presents.day, presents.hour, presents.minute, presents.second)
 print(presents)
 
 print(datetime.datetime.fromtimestamp(1000000))
-print(datetime.datetime.fromtimestamp(time.time())) # need to import time
+print(datetime.datetime.fromtimestamp(time.time()))  # need to import time
 
-halloween = datetime.datetime(2020, 10, 31)
-nyd = datetime.datetime(2021, 1, 1)
-oct_31 = datetime.datetime(2020, 10, 31)
+halloween = datetime.datetime(2021, 10, 31)
+nyd = datetime.datetime(2022, 1, 1)
+oct_31 = datetime.datetime(2021, 10, 31)
 print(halloween == oct_31)
 print(halloween > nyd)
 print(nyd != oct_31)

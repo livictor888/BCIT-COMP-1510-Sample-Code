@@ -8,8 +8,9 @@ import json
 
 
 with open('input.json', 'r') as data:
-	obj = json.load(data)
+	data_object = json.load(data)
+	print(type(data_object))
 	with open('output.txt', 'w') as output:
-		output.write(obj['name'] + "'s Hobbies:\n")
-		for hobby in obj['hobbies']:
+		output.write(data_object['name'] + "'s Hobbies:\n")
+		for hobby in data_object['hobbies']:
 			output.write(hobby + "\n")

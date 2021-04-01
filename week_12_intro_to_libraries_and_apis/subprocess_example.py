@@ -11,3 +11,4 @@ import time
 status = subprocess.run(['/usr/local/bin/python3', 'webbrowser_example.py'])
 time.sleep(3)
 status = subprocess.run('/System/Applications/Calculator.app/Contents/MacOS/Calculator')
+
