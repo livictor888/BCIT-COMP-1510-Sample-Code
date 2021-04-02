@@ -1,5 +1,5 @@
 class ShippingContainer:
-    next_serial = 1337
+    next_serial = 0
 
     @staticmethod
     def _get_next_serial():
@@ -36,6 +36,8 @@ class ShippingContainer:
 def main():
     a_container = ShippingContainer("YML", "coffee")
     print(a_container.serial)
+    print(ShippingContainer.next_serial)
+    print(ShippingContainer._get_next_serial())
     print(ShippingContainer.next_serial)
 
 
