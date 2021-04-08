@@ -3,7 +3,8 @@ import re
 
 def main():
     while True:
-        guffaw_regex = re.compile(r'(Ha){3,5}')
+        guffaw_regex = re.compile(r'(Ha){3,5}?')
+        # guffaw_regex = re.compile(r'(Ha){3,5}')
         user_input = input("How funny is the joke?: ")
 
         match_object = guffaw_regex.search(user_input)

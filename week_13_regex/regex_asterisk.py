@@ -14,6 +14,5 @@ def main():
             print("Wrong answer")
 
 
-
 if __name__ == "__main__":
     main()

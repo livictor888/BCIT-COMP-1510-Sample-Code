@@ -3,6 +3,8 @@ def is_phone_number(text: str) -> bool:
     Validate the structure of a phone number in string format.
 
     This function is correct, I think. Is it? It's hard to tell.
+
+    Yuck.
     """
     if len(text) != 12:
         return False  # not phone number-sized
