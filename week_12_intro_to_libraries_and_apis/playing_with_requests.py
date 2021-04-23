@@ -24,6 +24,7 @@ def download_page(url: str) -> str:
 
 def main():
     value = download_page('https://www.gutenberg.org/files/28054/28054-0.txt')
+    print(value)
 
 
 if __name__ == "__main__":

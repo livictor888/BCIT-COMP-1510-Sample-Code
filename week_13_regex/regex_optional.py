@@ -14,13 +14,13 @@ def main():
             print("Wrong answer")
 
         # Example using phone numbers
-        # phone_number_regex = re.compile(r'(\d\d\d-)?(\d\d\d)-(\d\d\d\d)')
-        # user_input = input("Enter your phone number, including the dashes:")
-        # match_object = phone_number_regex.search(user_input)
-        # if match_object:
-        #     print("Your number is:", match_object.group())
-        # else:
-        #     print("That's not a valid number")
+        phone_number_regex = re.compile(r'(\d\d\d-)?(\d\d\d)-(\d\d\d\d)')
+        user_input = input("Enter your phone number, including the dashes:")
+        match_object = phone_number_regex.search(user_input)
+        if match_object:
+            print("Your number is:", match_object.group())
+        else:
+            print("That's not a valid number")
 
 
 if __name__ == "__main__":

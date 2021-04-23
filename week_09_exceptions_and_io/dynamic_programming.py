@@ -47,7 +47,6 @@ def fibonacci_manager(nth_term, memory_structure):
 
 
 def main():
-
     dynamic_memory = {}
     print(fibonacci_manager(50, dynamic_memory))
 
