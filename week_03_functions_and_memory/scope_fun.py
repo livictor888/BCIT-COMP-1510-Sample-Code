@@ -19,5 +19,5 @@ def main():
     print("After f: x =", x)  # What gets printed?
 
 
-if __name__ == "__main_":
+if __name__ == "__main__":
     main()
