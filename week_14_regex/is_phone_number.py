@@ -17,7 +17,8 @@ def is_phone_number(text: str) -> bool:
         if not text[i].isdecimal():
             return False  # does not have first 3 digits
     if text[7] != '-':
-        return False  # does not have second hyphen
+        return False  # does        phone_number_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+        user_input = input("Enter a 10-digit phone number with dashes: ")
     for i in range(8, 12):
         if not text[i].isdecimal():
             return False  # does not have last 4 digits

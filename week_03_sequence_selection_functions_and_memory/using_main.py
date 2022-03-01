@@ -11,7 +11,7 @@ By placing everything inside function definitions, we avoid the case
 where we might accidentally execute some code and/or generate output that
 is not needed or desired.
 
-We place all of the code that "starts" the progra, inside the main function.
+We place all the code that "starts" the program inside the main function.
 
 Most programming languages use a main function. It drives the program. We
 also say it is the "point of insertion into the program".
@@ -27,7 +27,7 @@ def dunderize(name):
 
 
 def main():
-    print(dunderize("Dylan"))
+    print(dunderize("Jacky"))
 
 
 if __name__ == "__main__":

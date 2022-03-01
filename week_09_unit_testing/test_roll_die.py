@@ -6,7 +6,7 @@ Also demonstrates how to mock an object.
 from unittest import TestCase
 from unittest.mock import patch
 
-import week_08_unit_testing_and_syntactic_sugar.roll_die as roll_die
+import week_09_unit_testing.roll_die as roll_die
 
 
 class TestRollDie(TestCase):

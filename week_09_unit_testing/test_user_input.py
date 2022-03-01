@@ -1,7 +1,7 @@
 from unittest import TestCase
 from unittest.mock import patch
 
-from week_08_unit_testing_and_syntactic_sugar import user_input
+from week_09_unit_testing import user_input
 
 """
 Demonstrate how to mock an object.

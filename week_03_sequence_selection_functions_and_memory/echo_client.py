@@ -8,3 +8,5 @@ that are defined in some other module (source file).
 import echo
 
 print("__name__ is", __name__)
+print(echo.__name__)
+
