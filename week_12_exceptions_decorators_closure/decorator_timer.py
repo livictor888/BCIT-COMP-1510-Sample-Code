@@ -16,12 +16,12 @@ def timer(func):
 @timer
 def waste_some_time(num_times):
     for _ in range(num_times):
-        sum([i**2 for i in range(10000)])
+        sum([value ** 2 for value in range(num_times)])
 
 
 def main():
-    waste_some_time(1)
-    waste_some_time(999)
+    waste_some_time(1000)
+    waste_some_time(10000)
 
 
 if __name__ == "__main__":
