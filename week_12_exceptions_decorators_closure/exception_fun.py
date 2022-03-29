@@ -52,11 +52,11 @@ def informative_convert(value):
     try:
         return int(value)
     except (ValueError, TypeError) as e:
-        print("Conversion error: {} returning -1".format(str(e)), file=sys.stderr)
+        print("Conversion error: {} returning None".format(str(e)), file=sys.stderr)
         return None
 
 
-def our_factorial(positive_integer):
+def a_terrible_non_pythonic_function_dont_do_this(positive_integer):
     """This code is not Pythonic."""
     if positive_integer < 0:
         raise ValueError("No negative numbers!")
