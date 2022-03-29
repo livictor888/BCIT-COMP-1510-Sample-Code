@@ -57,6 +57,7 @@ def informative_convert(value):
 
 
 def our_factorial(positive_integer):
+    """This code is not Pythonic."""
     if positive_integer < 0:
         raise ValueError("No negative numbers!")
     if isinstance(positive_integer, int):
