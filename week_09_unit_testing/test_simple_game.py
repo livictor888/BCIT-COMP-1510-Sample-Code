@@ -18,7 +18,7 @@ import io
 from unittest import TestCase
 from unittest.mock import patch
 
-from week_08_unit_testing_and_syntactic_sugar.simple_game import simple_game
+from week_09_unit_testing.simple_game import simple_game
 
 
 class TestSimpleGame(TestCase):
@@ -49,3 +49,4 @@ class TestSimpleGame(TestCase):
         the_game_printed_this = mock_output.getvalue()
         expected_output = "Too high, the number was 4\n"
         self.assertEqual(expected_output, the_game_printed_this)
+

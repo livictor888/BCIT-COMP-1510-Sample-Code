@@ -29,7 +29,7 @@ from unittest import TestCase
 import unittest.mock
 import io
 
-import week_08_unit_testing_and_syntactic_sugar.using_a_print_function as using_a_print_function
+import week_09_unit_testing.using_a_print_function as using_a_print_function
 
 
 class TestMyPrinter(TestCase):

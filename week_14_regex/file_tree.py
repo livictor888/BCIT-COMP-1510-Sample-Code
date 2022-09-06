@@ -4,7 +4,7 @@ import re
 
 
 def find_files(pattern, base='.'):
-    """Find files under base based on pattern.
+    """Find files based on pattern.
 
     Walks the filesystem starting at base and returns a list
     pf filenames that match the given pattern.

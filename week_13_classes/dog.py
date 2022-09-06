@@ -12,12 +12,12 @@ class Dog:
 
     def roll_over(self):
         """Simulate rolling over in response to a command."""
-        print(self.__namename.title() + " rolled over!")
+        print(self.__name.title() + " rolled over!")
 
 
 def main():
-    my_dog = Dog('trevor', 6)
-    your_dog = Dog('lucy', 3)
+    my_dog = Dog('ryosuke', 6)
+    your_dog = Dog('deanna', 3)
 
     # print("My dog's name is " + my_dog.__name.title() + ".")
 
@@ -25,10 +25,10 @@ def main():
     print("My dog is " + str(my_dog._Dog__age) + " years old.")
     my_dog.sit()
 
-    print("\nMy dog's name is " + your_dog._Dog__name.title() + ".")
+    # print("\nMy dog's name is " + your_dog._Dog__name.title() + ".")
     # Report anyone who does this it is a crime against humanity
     # print("My dog is " + str(your_dog._Dog__age) + " years old.")
-    your_dog.sit()
+    your_dog.roll_over()
 
 
 if __name__ == "__main__":

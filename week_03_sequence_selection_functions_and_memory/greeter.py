@@ -25,7 +25,7 @@ def main():
     confused_rasp = str.swapcase
 
     user_input = input("What is your announcement: ")
-    greet(confused_rasp, user_input)
+    greet(whisper, user_input)
 
 
 if __name__ == "__main__":
